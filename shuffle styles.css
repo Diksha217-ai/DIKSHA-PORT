@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+}
+
+.shuffle-btn {
+    background: #ff4081;
+    color: white;
+    padding: 12px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(255, 64, 129, 0.5);
+}
+
+.shuffle-btn:hover {
+    background: #e60073;
+    transform: scale(1.1);
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.cup {
+    width: 100px;
+    height: 120px;
+    background: linear-gradient(to bottom, #ffd700, #ff8c00);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(255, 223, 0, 0.7);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.cup:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(255, 223, 0, 1);
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #ff0000, #cc0000);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    visibility: hidden;
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.8);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Cool Shuffle Animation */
+@keyframes shuffle {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(90px); }
+}
+
+.cup.shuffle {
+    animation: shuffle 1.5s ease-in-out;
+}

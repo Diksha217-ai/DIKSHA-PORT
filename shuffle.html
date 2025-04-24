@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Shuffle Game</title>
+    <link rel="stylesheet" href=" shuffle styles.css">
+</head>
+<body>
+    <h1>Find the Ball!</h1>
+    <button class="shuffle-btn" onclick="shuffleCups()">Shuffle Cups</button>
+    <div class="game-container">
+        <div class="cup" onclick="checkBall(0)"><div class="ball"></div></div>
+        <div class="cup" onclick="checkBall(1)"><div class="ball"></div></div>
+        <div class="cup" onclick="checkBall(2)"><div class="ball"></div></div>
+    </div>
+    <p id="message"></p>
+
+    <!-- Sound Effects -->
+    <audio id="shuffle-sound" src="shuffle.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="lose-sound" src="loss.mp3"></audio>
+
+    <script src=" shuffle script.js"></script>
+</body>
+</html>

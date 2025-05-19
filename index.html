@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome CDN below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -101,12 +103,51 @@
 
         
         <section id="contact" class="contact section hidden">
-            <h2>Contact</h2>
-            <p>Reach out via <a href="mailto:your.xyz@123.com">Email</a> or connect on:</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-                <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+            <h2>Contact <i class="fas fa-envelope"></i></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <span>DIKSHA@MIT.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <span>+91-93078**</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <span>
+                            <a href="https://www.linkedin.com/feed/" target="_blank">
+                                linkedin.com/in/diksha
+                            </a>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <span>
+                            <a href="https://github.com/Diksha217-ai" target="_blank">
+                                github.com/diksha
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
             </div>
         </section>
     </div>

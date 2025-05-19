@@ -531,3 +531,56 @@ footer {
     margin-top: 20px;
     color: #fff; /* Ensure text is visible on the new background */
 }
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.contact-info {
+    flex: 1;
+    min-width: 220px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contact-icon {
+    margin-right: 10px;
+    font-size: 1.3em;
+    color: #0077b5;
+}
+.contact-form {
+    flex: 2;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.submit-btn {
+    background: #0077b5;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.submit-btn:hover {
+    background: #005983;
+}
